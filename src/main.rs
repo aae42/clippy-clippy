@@ -336,7 +336,7 @@ async fn call_openai_api(
 #[tokio::main]
 async fn main() -> Result<()> {
     // Initialize logging (e.g., RUST_LOG=info, clippy_clippy=debug)
-    env_logger::Builder::from_env(env_logger::Env::default().default_filter_or("info")).init();
+    env_logger::Builder::from_env(env_logger::Env::default().default_filter_or("warn")).init();
 
     let cli = Cli::parse();
 
