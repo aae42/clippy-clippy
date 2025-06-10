@@ -225,7 +225,7 @@ async fn call_openai_api(
     info!("Using '{}' model for image to text...", model);
 
     let prompt_text = if generate_markdown {
-        "Extract all text from this image. If the image contains tabular data, a list, code, or other structured content, format the output as GitHub Flavored Markdown. Pay attention to formatting details like spacing in tables. Otherwise, return the plain text. Output *only* the extracted text or markdown content and nothing else. Do not include any introductory phrases or explanations."
+        "Extract all text from this image accurately. If the image contains tabular data, a list, code, or other structured content, format the output as GitHub Flavored Markdown. Pay attention to formatting details like spacing in tables. Don't use any image related markdown.  Otherwise, return the plain text. Output *only* the extracted text or markdown content and nothing else. Do not include any introductory phrases or explanations."
     } else {
         "Extract all text content from this image accurately. Output *only* the extracted text and nothing else. Do not include any introductory phrases."
     };
