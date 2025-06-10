@@ -414,7 +414,7 @@ async fn main() -> Result<()> {
         }
         Err(arboard::Error::ContentNotAvailable) => {
             info!("No image found in the clipboard.");
-            println!("📋 No image found in the clipboard. Copy an image and try again.");
+            warn!("📋 No image found in the clipboard. Copy an image and try again.");
             Ok(()) // Not an error state, just nothing to do
         }
         Err(e) => {
