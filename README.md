@@ -20,5 +20,5 @@ making adjustments.
 ## improvements
 
 The configuration system is ALMOST what I want, but works well enough.
-It's totally useable as an existing tool, so i'll use it for a while before
-I decide what improvements it might need.
+It's currently totally useable as a tool,
+so I'll use it for a while before I decide what improvements it might need.
